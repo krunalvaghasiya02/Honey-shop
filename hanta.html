@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanta-Beekeeping and Honey shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./asset/css/hanta.css">
+  <script src="asset/javascript/jquery-3.7.1.min.js"></script>
+  <!-- animation js cdn link start  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- animation js cdn link end  --> 
+	
+</head>
+
+<body>
+
+  <!-- header section start  -->
+
+  <header id="header">
+    <div class="container">
+      <div class="row">
+        <div class="logo">
+          <div class="image">
+            <a href="#"><img src="asset/image/logo.png" alt=""></a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">home</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">home page 01</a></li>
+                  <li><a href="#">home page 02</a></li>
+                  <li><a href="#">one page home</a></li>
+                  <li><a href="#">rtl home</a></li>
+                  <li><a href="#">header style<i class="fa-solid fa-angle-right"></i></a>
+                    <div class="sub-dropdown">
+                      <ul>
+                        <li><a href="#">header style 01</a></li>
+                        <li><a href="#">header style 02</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">pages</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">about us</a></li>
+                  <li><a href="#">our services</a></li>
+                  <li><a href="#">our gallery</a></li>
+                  <li><a href="#">404</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">shop</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">shop page 01</a></li>
+                  <li><a href="#">shop page 02</a></li>
+                  <li><a href="#">shop page 03</a></li>
+                  <li><a href="#">shop details</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">elements</a>
+              <div class="dropdown-block">
+                <div class="element-1">
+                  <h2>element 1</h2>
+                  <ul>
+                    <li><a href="#">about block 01</a></li>
+                    <li><a href="#">about block 02</a></li>
+                    <li><a href="#">feature block 01</a></li>
+                    <li><a href="#">feature block 02</a></li>
+                    <li><a href="#">shop block 01</a></li>
+                    <li><a href="#">shop block 02</a></li>
+                    <li><a href="#">news block 01</a></li>
+                    <li><a href="#">news block 02</a></li>
+                  </ul>
+                </div>
+                <div class="element-2">
+                  <h2>element 2</h2>
+                  <ul>
+                    <li><a href="#">feature block 03</a></li>
+                    <li><a href="#">feature block 04</a></li>
+                    <li><a href="#">counter block 01</a></li>
+                    <li><a href="#">counter block 02</a></li>
+                    <li><a href="#">process block 01</a></li>
+                    <li><a href="#">process block 02</a></li>
+                    <li><a href="#">testimonial block</a></li>
+                    <li><a href="#">client block</a></li>
+                  </ul>
+                </div>
+                <div class="element-3">
+                  <h2>element 3</h2>
+                  <ul>
+                    <li><a href="#">feature block 05</a></li>
+                    <li><a href="#">video block</a></li>
+                    <li><a href="#">chooseus block 01</a></li>
+                    <li><a href="#">chooseus block 02</a></li>
+                    <li><a href="#">chooseus block 01</a></li>
+                    <li><a href="#">subscribe block</a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">blog</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">blog grid</a></li>
+                  <li><a href="#">blog standard</a></li>
+                  <li><a href="#">blog details</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#" onclick="searchshow()"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <div id="search_box">
+                <input type="search" name="" id="" placeholder="Search..."><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </div></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+          </ul>
+        </div>
+        <div class="extra-feature">
+          <ul>
+            <li>
+              <div class="btn-menu-show">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+              </div>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              
+            </li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+          </ul>
+          <div class="btn-show">
+            <a href="#" onclick="showabout()"><i class="fa-solid fa-bars"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- header section end  -->
+  <!-- click events section start  -->
+  <div id="arrow-up">
+    <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+  </div>
+  <div id="blackshadow">
+
+  </div>
+  <div id="about_form">
+    <div class="form">
+      <div class="close">
+        <a href="#" onclick="closeabout()"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <div class="logo">
+        <div class="image">
+          <a href="#"><img src="asset/image/logo-2.png" alt=""></a>
+        </div>
+      </div>
+      <div class="heading" >
+        <h2>about us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+          Ut enim ad minim veniam laboris.</p>
+      </div>
+      <div class="information">
+        <h2>Get a free quote</h2>
+        <form action="#">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <textarea name="" id="" placeholder="Message..."></textarea>
+          <div class="btn-left"><a href="#">SUBMIT NOW</a></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <!-- click events section end  -->
+  <!-- slider section start  -->
+  <section class="slider-section">
+    <div class="container">
+      <div class="row">
+        <div class="bg-right-image" data-aos="fade-left">
+          <img src="asset/image/banner-image-1.png" alt="">
+        </div>
+        <div class="left-arrow">
+          <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <div class="right-arrow">
+          <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="contant" data-aos="fade-up">
+          <div class="heading">
+            <h1>original Honeycomb</h1>
+            <h2>best organic & frersh honey</h2>
+          </div>
+
+          <div class="btn-box">
+            <div class="btn-left"><a href="#">learn more</a></div>
+            <div class="btn-right"><a href="#">shop now</a></div>
+          </div>
+        </div>
+        <div class="bg-bottom-image">
+          <img src="asset/image/bee-1.png" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- slider section end  -->
+  <!-- features section start  -->
+  <section class="features-section">
+    <div class="container">
+      <div class="row">
+        <div class="heading">
+          <h3>who we are</h3>
+          <h2>best features</h2>
+        </div>
+        <div class="main-box" data-aos="fade-up">
+          <div class="box">
+            <div class="contant">
+              <div class="image">
+                <img src="asset/image/feature-1.png" alt="">
+              </div>
+              <div class="detail">
+                <h2>natural honey</h2>
+                <p>Sed perspiciatis unde omnis iste natus error voluptatem accusantium doloremqu laudantium totam rem
+                  aperiam</p>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+          </div>
+          <div class="box">
+            <div class="contant">
+              <div class="image"><img src="asset/image/feature-2.png" alt=""></div>
+              <div class="detail">
+                <h2>ORGANIC HONEY</h2>
+                <p>Sed perspiciatis unde omnis iste natus error voluptatem accusantium doloremqu laudantium totam rem
+                  aperiam</p>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+          </div>
+          <div class="box">
+            <div class="contant">
+              <div class="image"><img src="asset/image/feature-3.png" alt=""></div>
+              <div class="detail">
+                <h2>BIOGRAPHY SAFETY</h2>
+                <p>Sed perspiciatis unde omnis iste natus error voluptatem accusantium doloremqu laudantium totam rem
+                  aperiam</p>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- features section end  -->
+  <!-- about section start  -->
+  <section class="about-section">
+
+    <div class="container">
+      <div class="row">
+        <div class="main-box">
+          <div class="bee-img">
+            <img src="asset/image/bee-2.png" alt="">
+          </div>
+          <div class="box-left">
+            <div class="circle">
+              <div class="image">
+                <img src="asset/image/about-1.png" alt="">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="box-right">
+
+            <div class="year-img">
+              <img src="asset/image/year-1.png" alt="">
+            </div>
+            <h2>about company</h2>
+            <h3>YEARS OF SINCE WE PROVIDE HONEY SUCCESSFULLY</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus volup tatem accusantium doloremque laudantium, totam reperiam,
+              eaque ipsa quae ab illo inventore veritatis et qrchitecto beatae vitae dicta sunt explicabo.</p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about section end  -->
+  <!-- product section start  -->
+  <section class="product-section">
+    <div class="container">
+      <div class="row">
+        <div class="heading">
+          <h2>Visit Our Store</h2>
+          <h3>POPULAR PRODUCT</h3>
+        </div>
+        <div class="main-cart">
+          <div class="cart" data-aos="fade-right" data-aos-delay="200">
+            <div class="contant">
+              <div class="product-img">
+                <img src="asset/image/shop-1.png" alt="">
+              </div>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <a href="#">black fresh honey</a>
+              <h4>$59.99</h4>
+
+            </div>
+          </div>
+          <div class="cart" data-aos="fade-right" data-aos-delay="300">
+            <div class="contant">
+              <div class="product-img">
+                <img src="asset/image/shop-2.png" alt="">
+              </div>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <a href="#">red fresh honey</a>
+              <h4>$79.99</h4>
+
+            </div>
+          </div>
+          <div class="cart" data-aos="fade-right" data-aos-delay="400">
+            <div class="contant">
+              <div class="product-img">
+                <img src="asset/image/shop-3.png" alt="">
+              </div>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <a href="#">yellow fresh honey</a>
+              <h4>$65.99</h4>
+
+            </div>
+          </div>
+          <div class="cart" data-aos="fade-right" data-aos-delay="500">
+            <div class="contant">
+              <div class="product-img">
+                <img src="asset/image/shop-4.png" alt="">
+              </div>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <a href="#">flower fresh honey</a>
+              <h4>49.99</h4>
+
+            </div>
+          </div>
+        </div>
+        <div class="btn">
+          <a href="#">view all product</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- product section end  -->
+  <!-- choose section start  -->
+  <section class="choose-section">
+    <div class="container">
+      <div class="row">
+        <div class="main-box">
+          <div class="detail-box">
+            <h2>Why Choose Us</h2>
+            <h3>PEOPLE WHY CHOOSE
+              OUR PRODUCT</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus volup tatem accusantium dolore dantiu totam reperiam, eaque
+              ipsa quae ab illo inventore veritatis et qrchitecto</p>
+            <div class="main-cart">
+              <div class="cart"data-aos="fade-right">
+                <div class="icon">
+                  <span><i class="fa-solid fa-seedling"></i></span>
+                </div>
+                <div class="detail">
+                  <h2>FLOWERS PRODUCE</h2>
+                  <p>Sed ut perspiciatis unde omnis natus volup</p>
+                </div>
+              </div>
+              <div class="cart"data-aos="fade-left">
+                <div class="icon"><span><i class="fa-solid fa-bug"></i></span></div>
+                <div class="detail">
+                  <h2>NATURAL BEES</h2>
+                  <p>Sed ut perspiciatis unde omnis natus volup</p>
+                </div>
+
+
+              </div>
+              <div class="cart"data-aos="fade-right">
+                <div class="icon"><span><i class="fa-solid fa-seedling"></i></span></div>
+                <div class="detail">
+                  <h2>BEES SEAL CELLS</h2>
+                  <p>Sed ut perspiciatis unde omnis natus volup</p>
+                </div>
+
+
+              </div>
+              <div class="cart"data-aos="fade-left">
+                <div class="icon"><span><i class="fa-solid fa-seedling"></i></span></div>
+                <div class="detail">
+                  <h2>WELL PRODUCT</h2>
+                  <p>Sed ut perspiciatis unde omnis natus volup</p>
+                </div>
+
+
+              </div>
+              <div class="cart"data-aos="fade-right">
+                <div class="icon"><span><i class="fa-solid fa-seedling"></i></span></div>
+                <div class="detail">
+                  <h2>HONEY COMB</h2>
+                  <p>Sed ut perspiciatis unde omnis natus volup</p>
+                </div>
+
+
+              </div>
+              <div class="cart"data-aos="fade-left">
+                <div class="icon"><span><i class="fa-solid fa-seedling"></i></span></div>
+                <div class="detail">
+                  <h2>INCREASES IMMUNITY</h2>
+                  <p>Sed ut perspiciatis unde omnis natus volup</p>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <div class="border-box">
+              <img src="asset/image/bee-2.png" alt="">
+            </div>
+            <img src="asset/image/chooseus-1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- choose section end  -->
+  <!-- photo section start  -->
+  <section class="photo-section">
+    <div class="container">
+      <div class="row">
+        <div class="heading">
+          <h2>Latest Project</h2>
+          <h3>PHOTO GALLERY</h3>
+        </div>
+        <div class="main-cart">
+          <div class="cart-1">
+
+            <div class="image-top" data-aos="fade-right">
+              <div class="contant">
+                <div class="image">
+                  <img src="asset/image/project-1.jpg" alt="">
+                </div>
+                <div class="detail">
+                  <a href="#">original honey</a>
+                  <p>good for human health</p>
+                  <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="image-bottom" data-aos="fade-right">
+              <div class="contant">
+                <div class="image">
+                  <img src="asset/image/project-2.jpg" alt="">
+                </div>
+                <div class="detail">
+                  <a href="#">original honey</a>
+                  <p>good for human health</p>
+                  <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="cart-2">
+
+            <div class="image-top" data-aos="fade-up">
+              <div class="contant">
+                <div class="image">
+                  <img src="asset/image/project-3.jpg" alt="">
+                </div>
+                <div class="detail">
+                  <a href="#">original honey</a>
+                  <p>good for human health</p>
+                  <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+
+            </div>
+            <div class="image-bottom" data-aos="fade-up">
+              <div class="contant">
+                <div class="image">
+                  <img src="asset/image/project-4.jpg" alt="">
+                </div>
+                <div class="detail">
+                  <a href="#">original honey</a>
+                  <p>good for human health</p>
+                  <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="cart-3">
+
+            <div class="image-top" data-aos="fade-up">
+              <div class="contant">
+                <div class="image">
+                  <img src="asset/image/project-5.jpg" alt="">
+                </div>
+                <div class="detail">
+                  <a href="#">original honey</a>
+                  <p>good for human health</p>
+                  <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+
+            </div>
+            <div class="image-bottom" data-aos="fade-up">
+              <div class="contant">
+                <div class="image">
+                  <img src="asset/image/project-6.jpg" alt="">
+                </div>
+                <div class="detail">
+                  <a href="#">original honey</a>
+                  <p>good for human health</p>
+                  <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="cart-4">
+
+            <div class="image-top"data-aos="fade-left">
+              <div class="contant">
+                <div class="image">
+                  <img src="asset/image/project-7.jpg" alt="">
+                </div>
+                <div class="detail">
+                  <a href="#">original honey</a>
+                  <p>good for human health</p>
+                  <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+
+            </div>
+            <div class="image-bottom"data-aos="fade-left">
+              <div class="contant">
+                <div class="image">
+                  <img src="asset/image/project-8.jpg" alt="">
+                </div>
+                <div class="detail">
+                  <a href="#">original honey</a>
+                  <p>good for human health</p>
+                  <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- photo section end  -->
+  <!-- testimonials section start  -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="row">
+        <div class="heading">
+          <div class="data">
+            <h2>Our Testimonials</h2>
+            <h3>PEOPLE’S SAY US</h3>
+          </div>
+          <div class="arrow">
+            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="main-box">         
+            <div class="box">
+
+              <p><img src="asset/image/arrow-1.png" alt="">But perspiciatis unde omnis iste natus errore sit voluptatem
+                accusantium doloremque laudantiu tota rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicaemoe enim ipsam voluptatem quia voluptas sit</p>
+              <div class="profile">
+                <div class="photo">
+                  <img src="asset/image/testimonial-1.png" alt="">
+                </div>
+                <div class="details">
+                  <h2>om kikani</h2>
+                  <h3>ceo & founder</h3>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+  
+              <p><img src="asset/image/arrow-1.png" alt="">But perspiciatis unde omnis iste natus errore sit voluptatem
+                accusantium doloremque laudantiu tota rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicaemoe enim ipsam voluptatem quia voluptas sit</p>
+              <div class="profile">
+                <div class="photo">
+                  <img src="asset/image/testimonial-2.png" alt="">
+                </div>
+                <div class="details">
+                  <h2>aakash vala</h2>
+                  <h3>ceo & founder</h3>
+                </div>
+              </div>
+            </div>                  
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- testimonials section end  -->
+  <!-- review section start  -->
+  <section class="review-section">
+    <div class="container">
+      <div class="row">
+        <div class="main-cart">
+          <div class="cart">
+            <i class="fa-regular fa-heart"></i>
+            <h2 class="count" data-count="2560">0</h2>
+            <p>satisfide clients</p>
+          </div>
+          <div class="cart">
+            <i class="fa-brands fa-pagelines"></i>
+            <h2 class="count" data-count="3692">0</h2>
+            <p>honeycomb</p>
+          </div>
+          <div class="cart">
+            <i class="fa-solid fa-earth-oceania"></i>
+            <h2 class="count" data-count="9865">0</h2>
+            <p>latest product</p>
+          </div>
+          <div class="cart">
+            <i class="fa-solid fa-medal"></i>
+            <h2 class="count" data-count="3679">0</h2>
+            <p>win awords</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- review section end  -->
+  <!-- contac section start  -->
+  <section class="contac-section">
+    <div class="container">
+      <div class="row">
+        <div class="contant">
+          <h2>Get Our Product</h2>
+          <h3>WANT TO OUR NEW PRODUCT PLEASE
+            CONTACT US NOW</h3>
+          <a href="#">contact us</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- contac section end  -->
+  <!-- sample section start  -->
+  <section class="sample-section">
+    <div class="container">
+      <div class="row">
+        <div class="main-box">
+          <div class="box" data-aos="fade-up" data-aos-delay="200">
+            <div class="details">
+              <div class="image">
+                <img src="asset/image/news-1.jpg" alt="">
+              </div>
+              <div class="information">
+                <p><a href="#">Mirage JS Deep Dive Understan ding Timing, Response And Pass rough (Part 3)Can I Learn
+                    eact Tools Are Most Accessibls</a></p>
+                <ul>
+                  <li><i class="fa-regular fa-calendar-days"></i> <span>30 aug 2020</span></li>
+                  <li><i class="fa-regular fa-comment"></i><a href="#">com(05)</a></li>
+                </ul>
+                <div class="link">
+                  <a href="">read more</a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="300">
+            <div class="details">
+              <div class="image">
+                <img src="asset/image/news-2.jpg" alt="">
+              </div>
+              <div class="information">
+                <p><a href="#">Smashing Podcast Episo With Mina Markham How Can I Learn React Which Video Conferencie
+                    Tools Are Most Accessibls</a></p>
+                <ul>
+                  <li><i class="fa-regular fa-calendar-days"></i> <span>29 aug 2020</span></li>
+                  <li><i class="fa-regular fa-comment"></i><a href="#">com(06)</a></li>
+                </ul>
+                <div class="link"><a href="#">read more</a></div>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="400">
+            <div class="details">
+              <div class="image">
+                <img src="asset/image/news-3.jpg" alt="">
+              </div>
+              <div class="information">
+                <p><a href="#">Building A Facial Recognition Web Application With React How Can I Learn React Which
+                    Video Tools Are Most Accessibls</a></p>
+                <ul>
+                  <li><i class="fa-regular fa-calendar-days"></i> <span>28 aug 2020</span></li>
+                  <li><i class="fa-regular fa-comment"></i><a href="#">com(02)</a></li>
+                </ul>
+                <div class="link"><a href="#">read more</a></div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- sample section end  -->
+  <!-- logo section start  -->
+  <section class="logo-section">
+    <div class="container">
+      <div class="row">
+        <div class="main-cart">
+          <div class="sub-cart"><img src="asset/image/clients-logo-1.png" alt=""></div>
+          <div class="sub-cart"><img src="asset/image/clients-logo-2.png" alt=""></div>
+          <div class="sub-cart"><img src="asset/image/clients-logo-3.png" alt=""></div>
+          <div class="sub-cart"><img src="asset/image/clients-logo-4.png" alt=""></div>
+          <div class="sub-cart"><img src="asset/image/clients-logo-5.png" alt=""></div>
+          <div class="sub-cart"><img src="asset/image/clients-logo-6.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- logo section end  -->
+  <footer >
+    <div class="container">
+      <div class="row">
+        <div class="main-box" data-aos="slide-right">
+          <div class="box">
+            <div class="quick-link">
+              <div class="bg-image">
+                <img src="asset/image/honey-1.png" alt="">
+              </div>
+              <h2>quick link</h2>
+              <ul>
+                <li><a href="#">company history</a></li>
+                <li><a href="#">latest news & blog</a></li>
+                <li><a href="#">popular service</a></li>
+                <li><a href="#">honeycomb</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="company">
+              <h2>company</h2>
+              <ul>
+                <li><a href="#">about company</a></li>
+                <li><a href="#">world wide clients</a></li>
+                <li><a href="#">happy people's</a></li>
+                <li><a href="#">winning awards</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="contact-us">
+              <h2>contact us</h2>
+              <p>DON’T HESITE TO CONATCT WITH US FEEL FREE WHEN YOU TALK WITH US</p>
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+              </ul>
+              <ul>
+                <li><span><i class="fa-solid fa-phone-flip"></i></span></li>
+                <li><a href="#">+012(345)6789</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="recent-news">
+              <div class="bg-image">
+                <img src="asset/image/honey-2.png" alt="">
+              </div>
+              <h2>recent news</h2>
+              <ul>
+                <li>
+                  <div class="image">
+                    <img src="asset/image/footer-post-1.jpg" alt="">
+                  </div>
+                  <div class="detail">
+                    <a href="#">Building A Facial world soc Recognition Web Appl</a>
+                    <span>25 JULY 2020</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="image">
+                    <img src="asset/image/footer-post-2.jpg" alt="">
+                  </div>
+                  <div class="detail">
+                    <a href="#">Mirage JS Deep nderstanding Timing Response Passthr</a>
+                    <span>24 JULY 2020</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="devloper-info">
+          <ul>
+            <li>
+              <p>copy &copy;<a href="#">hanta.</a>example 2024</p>
+            </li>
+            <li>all right reserved design by krunal vaghasiya as fresher</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="asset/javascript/hanta.js"></script>
+<!-- animation script start  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({     
+        delay: 100, 
+        duration: 1000,
+      });
+      </script>
+<!-- animation script end  -->
+</body>
+
+</html>
