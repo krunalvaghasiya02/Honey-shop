@@ -446,7 +446,7 @@ header .container .row .social-media .btn-show a i {
 
 .slider-section {
   position: relative;
-  background-image: url(/asset/image/banner-1.png);
+  background-image: url(/asset/image/banner-1.png) !important;
   background-repeat: no-repeat;
   padding: 180px 0px 300px 0px;
   background-size: cover;
